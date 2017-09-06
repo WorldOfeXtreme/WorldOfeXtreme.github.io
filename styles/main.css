@@ -1,0 +1,182 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    border-bottom: solid 1px #fff;
+    background: #000;
+    z-index: 10;
+}
+
+#logo {
+    height: 50px;
+    width: 100px;
+    background: url("../images/wox-logo.png");
+    background-size: cover;
+}
+
+#main-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#main-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#main-menu .active,
+#main-menu a:hover {
+    color: red;
+}
+
+#wox-logo {
+    height: 60%;
+    width: 60%;
+}
+
+.about-description {
+    width: 30%;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.wrapper-slider {
+    width: 700px;
+    background: #000;
+}
+
+.wrapper-slider .slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+}
+
+.wrapper-slider .description {
+    display: inline-block;
+    width: calc(100% - 220px);
+    white-space: normal;
+}
+
+.wrapper-slider img {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.wrapper-slider .title {
+    font-weight: bold;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.section-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#contacts {
+    height: calc(100vh - 85px);
+    font-size: 1.2em;
+}
+
+#contacts li {
+    padding-bottom: 10px;
+}
+
+#contacts li:before {
+    position: relative;
+    right: 5px;
+    top: 4px;
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+}
+
+.contact-gmail:before {
+    background: url("../images/gmail-icon.png");
+}
+
+.contact-skype:before {
+    background: url("../images/skype-icon.png");
+}
+
+#footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    border-top: solid 1px #fff;
+}
+
+.social {
+    float: right;
+}
+
+.social a,
+.social li {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    background-size: cover;
+}
+
+.social-vk {
+    background: url("../images/vk-icon.png") 50% 50% no-repeat;
+}
+
+.social-fb {
+    background: url("../images/fb-icon.png") 50% 50% no-repeat;
+}
+
+@media (max-width: 600px) {
+    .wrapper-slider {
+        width: 400px;
+    }
+}
