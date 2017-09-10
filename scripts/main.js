@@ -29,7 +29,10 @@ $(document).ready(function() {
         return true;
     });
 
-    $('.bxslider').bxSlider();
+    $('.bxslider').bxSlider({
+        adaptiveHeight: true,
+        slideWidth: 1000
+    });
     
 });
 

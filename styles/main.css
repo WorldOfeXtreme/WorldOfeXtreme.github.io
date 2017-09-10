@@ -79,7 +79,8 @@ a:hover {
 }
 
 .wrapper-slider {
-    width: 700px;
+    height: 500px;
+    width: 1000px;
     background: #000;
 }
 
@@ -94,14 +95,14 @@ a:hover {
 
 .wrapper-slider .description {
     display: inline-block;
-    width: calc(100% - 220px);
+    width: calc(100% - 600px);
     white-space: normal;
 }
 
 .wrapper-slider img {
     display: inline-block;
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 550px;
 }
 
 .wrapper-slider .title {
@@ -173,6 +174,37 @@ a:hover {
 
 .social-fb {
     background: url("../images/fb-icon.png") 50% 50% no-repeat;
+}
+
+@media (max-width: 1400px) {
+
+    #about {
+        flex-wrap:  wrap;
+    }
+
+    #wox-logo,
+    .about-description {
+        width: 80%;
+    } 
+}
+
+@media (max-width: 1000px) {
+    
+    .wrapper-slider {
+        height: 300px;
+        width: 600px;
+    }
+
+    .wrapper-slider img {
+        display: inline-block;
+        height: 200px;
+        width: 300px;
+    }
+
+    .wrapper-slider .description {
+        display: inline-block;
+        width: calc(100% - 320px);
+    }
 }
 
 @media (max-width: 600px) {
