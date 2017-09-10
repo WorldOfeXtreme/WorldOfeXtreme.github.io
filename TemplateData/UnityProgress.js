@@ -9,6 +9,7 @@ function UnityProgress (dom) {
 	background.style.background = Module["backgroundColor"] ? Module["backgroundColor"] : "#4D4D4D";
 	background.style.position = "absolute";
 	background.style.overflow = "hidden";
+	background.style.backgroundColor = "hidden";
 	parent.appendChild(background);
 	this.background = background;
 
@@ -66,8 +67,8 @@ function UnityProgress (dom) {
 
 	this.SetMessage = function (message) { 
 		this.message = message; 
-		this.background.style.display = "inline";
-		this.logoImage.style.display = "inline";
+		this.background.style.display = "none";
+		this.logoImage.style.display = "none";
 		this.progressFrame.style.display = "none";
 		this.progressBar.style.display = "none";			
 		this.Update();
